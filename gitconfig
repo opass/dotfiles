@@ -28,8 +28,6 @@
   autocrlf = input
   filemode = true
   editor = vim
-[merge]
-  ff = only
 [commit]
   template = ~/.gitmessage
 [fetch]
