@@ -51,7 +51,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+#plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -83,6 +83,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# ---------------
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1"  ] && [ -s $BASE16_SHELL/profile_helper.sh  ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 # -------------------------thought-bot below----------------------------------
 # load custom executable functions
 for function in ~/.zsh/functions/*; do
